@@ -1,0 +1,64 @@
+<!-- 
+
+    Problem statement: build star pattern.
+
+    ## Requirements:
+    Que: What are the features that we want in that project.
+
+    Must have features:
+        1. Rating from 1 to 5.
+        2. When we click -> rating should appear.
+        3. A hover effect should be there even after click?
+
+    Good to have features -> optimzation, accessibility. 
+        1. Can we put emojies instead of numbers.
+        2. Slider based rating.
+
+
+    Approach:
+        1. HTML/CSS
+           Prepare with basic/static HTML/CSS.
+        
+        2. Javascript.
+           a. We have to listen to three events.
+            i. Click -> Give the rating.
+                        Update star upto taht level.
+                        Update rating count.
+            
+            ii. mouseover -> we have to change the star upto that level to yellow without changing the rating once rating is given.
+
+            Edge case:
+            iii. mouseleave: move it gray stars.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent_container">
+        <div class="container">
+
+            <h1>Rate the Service</h1>
+    
+            <div class="star_container">
+    
+                <div class="star" idx="1">&#9733;</div>
+                <div class="star" idx="2">&#9733;</div>
+                <div class="star" idx="3">&#9733;</div>
+                <div class="star" idx="4">&#9733;</div>
+                <div class="star" idx="5">&#9733;</div>
+    
+            </div>
+    
+            <h2>Rating count: <span id="count">0</span></h2>
+    
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
